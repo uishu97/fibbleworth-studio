@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy policy · Fibbleworth Studio</title>
-<meta name="description" content="How Fibbleworth Studio handles the Google and YouTube access it uses to upload Captain Fibbleworth videos.">
+<meta name="description" content="How Fibbleworth Studio handles the Google, YouTube, Facebook and Instagram access it uses to post Captain Fibbleworth videos.">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
@@ -24,11 +24,12 @@
 
 <main>
   <h1>Privacy policy</h1>
-  <p class="meta">Fibbleworth Studio · in effect from 26 October 2026</p>
+  <p class="meta">Fibbleworth Studio · last updated 26 October 2026</p>
 
   <div class="note">
-    <p>Fibbleworth Studio is a private tool used only by the creator of the Captain Fibbleworth YouTube channel to
-      upload the channel's own videos. It has no other users and collects nothing from viewers of the channel.</p>
+    <p>Fibbleworth Studio is a private tool used only by the creator of Captain Fibbleworth to post the series' own
+      videos to its YouTube channel, Instagram account and Facebook Page. It has no other users and collects nothing
+      from viewers.</p>
   </div>
 
   <h2>Who is responsible</h2>
@@ -40,40 +41,52 @@
     by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your data is
     described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
+  <h2>Meta Platform</h2>
+  <p>Fibbleworth Studio posts to the Captain Fibbleworth Facebook Page and Instagram account through Meta's Graph API,
+    under the <a href="https://developers.facebook.com/terms/">Meta Platform Terms</a>. Meta's handling of data is
+    described in the <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</p>
+
   <h2>What Fibbleworth Studio accesses</h2>
   <p>When the creator connects the channel, Google asks them to allow Fibbleworth Studio to upload and manage the
     channel's YouTube videos. Fibbleworth Studio uses that permission for one thing: uploading a video the creator has
     approved, with its title, description and tags, and reading back YouTube's reply about that upload (the new
     video's ID and its upload and privacy status). It does not read email, contacts, files, viewing history,
     comments or any other Google data.</p>
+  <p>When the creator connects the Facebook Page, Meta asks them to allow Fibbleworth Studio to see the Page and the
+    Instagram account linked to it and to publish to them. Fibbleworth Studio uses that permission for one thing:
+    posting a video the creator has approved as a Reel with its caption, and reading back Meta's reply about it (the
+    post's ID, its processing status and its link). It does not read messages, comments, followers, insights or any
+    other Facebook or Instagram data.</p>
 
   <h2>What it keeps, and where</h2>
   <ul>
-    <li>The sign-in tokens Google issues, stored encrypted in the n8n automation software on the creator's own
-      computer. They are used only to make uploads.</li>
-    <li>For each uploaded video: its YouTube ID and upload status, saved next to the episode on the creator's computer
-      so the same video is never uploaded twice.</li>
-    <li>n8n's record of each upload run, including YouTube's reply, on the same computer. n8n deletes these records
-      automatically after 14 days.</li>
+    <li>The sign-in tokens Google and Meta issue, stored encrypted in the n8n automation software on the creator's
+      own computer. They are used only to post videos.</li>
+    <li>For each posted video: its YouTube, Instagram or Facebook ID, link and upload status, saved next to the
+      episode on the creator's computer so the same video is never posted twice.</li>
+    <li>n8n's record of each run, including YouTube's and Meta's replies, on the same computer. n8n deletes these
+      records automatically after 14 days.</li>
   </ul>
   <p>Nothing is stored on servers run by Fibbleworth Studio; it has none. There is no analytics, advertising or
     tracking of any kind.</p>
 
   <h2>Who it is shared with</h2>
-  <p>Google user data is not sold, rented or shared with anyone. The video and its details go only to YouTube, as the
-    upload itself. After an upload, the video's link is sent to the creator's own private chat with the studio's
-    Telegram bot, so the creator can check it.</p>
+  <p>Data from Google and Meta is not sold, rented or shared with anyone. The video and its details go only to the
+    platform it is posted on, as the post itself. After a post, its link is sent to the creator's own private chat
+    with the studio's Telegram bot, so the creator can check it.</p>
   <p>Fibbleworth Studio's use and transfer to any other app of information received from Google APIs will adhere to
     the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
     Policy</a>, including the Limited Use requirements.</p>
 
-  <h2>Removing its access</h2>
-  <p>Access can be withdrawn at any time on Google's <a href="https://myaccount.google.com/connections">Third-party
+  <h2 id="removing">Removing its access and deleting data</h2>
+  <p>Google access can be withdrawn at any time on Google's <a href="https://myaccount.google.com/connections">Third-party
     apps and services</a> page or the <a href="https://security.google.com/settings/security/permissions">security
-    settings page</a>. After that the stored tokens no longer work, and they are deleted from the creator's computer.
+    settings page</a>. Facebook and Instagram access can be withdrawn under Facebook's
+    <a href="https://www.facebook.com/settings/?tab=business_tools">Business integrations</a> settings by removing
+    Fibbleworth Studio. After that the stored tokens no longer work, and they are deleted from the creator's computer.
     To ask for any data described here to be deleted, write to
     <a href="mailto:hello@fibbleworth.com">hello@fibbleworth.com</a>; it is deleted within 30 days. Videos already
-    uploaded stay on YouTube until they are deleted there.</p>
+    posted stay on YouTube, Instagram and Facebook until they are deleted there.</p>
 
   <h2>Cookies</h2>
   <p>Fibbleworth Studio and this website set no cookies and use no local storage on your device.</p>
@@ -100,6 +113,8 @@
     <a href="./">Home</a>
     <a href="privacy.html">Privacy policy</a>
     <a href="https://www.youtube.com/@fibbleworth">YouTube</a>
+    <a href="https://www.instagram.com/fibbleworth/">Instagram</a>
+    <a href="https://www.facebook.com/fibbleworth">Facebook</a>
   </nav>
   <p class="tagline">True tales. Mostly.</p>
 </footer>
