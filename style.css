@@ -1,0 +1,62 @@
+/* Fibbleworth Studio's public pages: the studio dashboard's tokens (bible/brand.md colours), a coat-navy band with
+   the porthole and wordmark, then one reading column. No web fonts, so the pages make no third-party requests. */
+:root {
+  --bg: #eaeff4;
+  --surface: #ffffff;
+  --ink: #15233d;
+  --ink-2: #4c5b75;
+  --line: #cbd5e1;
+  --band: #13213b;     /* the Captain's coat, in both themes */
+  --brass: #e0a842;
+  --rule: #a3701a;     /* dark brass: rules and underlines on light ground */
+  --cream: #f3e6c8;
+  --display: "Roboto Slab", Rockwell, "Rockwell Nova", Georgia, serif;
+  --body: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1424; --surface: #121e35; --ink: #e8edf6; --ink-2: #9aa9c4; --line: #263555; --rule: #e0a842;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--body); }
+
+.band { background: var(--band); color: var(--cream); }
+.band-inner, main, footer {
+  max-width: 44rem; margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.band-inner { display: flex; align-items: center; gap: 18px; padding-block: 22px; }
+.band a { display: flex; align-items: center; gap: 18px; color: inherit; text-decoration: none; }
+.porthole { width: 72px; height: 72px; border-radius: 50%; flex: none; }
+.lockup { display: grid; gap: 6px; }
+.wordmark { width: 220px; max-width: 100%; height: auto; display: block; }
+.studio { font: 600 13px/1 var(--display); letter-spacing: 0.32em; text-transform: uppercase; color: var(--brass); }
+
+main { padding-block: 40px 24px; }
+h1, h2 { font-family: var(--display); font-weight: 600; line-height: 1.2; text-wrap: balance; }
+h1 { font-size: 2.1rem; margin: 0 0 8px; }
+h2 { font-size: 1.2rem; margin: 2.2em 0 0.4em; padding-top: 0.9em; border-top: 2px solid var(--line); }
+.lead { font-size: 1.15rem; color: var(--ink-2); margin: 0 0 1.4em; }
+.meta { font-size: 0.9rem; color: var(--ink-2); margin: 0 0 1.6em; }
+p, ul { margin: 0 0 1em; }
+ul { padding-left: 1.2em; }
+li + li { margin-top: 0.4em; }
+a { color: inherit; text-decoration-color: var(--rule); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+a:focus-visible { outline: 3px solid var(--brass); outline-offset: 2px; border-radius: 2px; }
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.note p:last-child { margin-bottom: 0; }
+
+footer { padding-block: 24px 40px; color: var(--ink-2); font-size: 0.95rem; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 10px; }
+.tagline { font-family: var(--display); font-style: italic; margin: 0; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .porthole { width: 56px; height: 56px; }
+  .wordmark { width: 170px; }
+  h1 { font-size: 1.7rem; }
+}
